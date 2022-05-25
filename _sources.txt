@@ -1,0 +1,10 @@
+>> TomTom API
+https://developer.tomtom.com/maps-sdk-web-js-v5/documentation
+
+> Marker div.bwm-marker
+
+> For the Search Input Field
+http://ericgio.github.io/react-bootstrap-typeahead/
+
+## My Original Git :
+https://github.com/samedan/2106_airbnb_clone_server/blob/main/routes/rentals.js
