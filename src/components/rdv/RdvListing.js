@@ -26,32 +26,31 @@ const RdvListing = ({
               {/* Only if 'received' booking */}
               {type === "received" && (
                 <div className="card-header">
-                  From: <i>{rdv.user.username}</i>
+                  From: <i>{/* {rdv.user.username} */}</i>
                 </div>
               )}
 
               <div className="card-block">
                 <h4 className="card-title">
-                  {rdv.rental.title} - {capitalize(rdv.rental.city)}
+                  {rdv.specialite}
+                  {/* - {capitalize(rdv.rental.city)} */}
                 </h4>
                 <p className="card-text booking-days">
-                  {formatDate(rdv.startAt)} - {formatDate(rdv.endAt)} |{" "}
-                  {rdv.nights} nights
+                  Date/Heure : {formatDate(rdv.date)}
                 </p>
                 <p className="card-text">
-                  <span>Price: </span>{" "}
-                  <span className="booking-price-value">$250</span>
+                  <span>Créé le: </span>{" "}
+                  <span className="booking-price-value">
+                    {formatDate(rdv.createdAt)}{" "}
+                  </span>
                 </p>
                 <Link
-                  to={{ pathname: `/rentals/${rdv.rental._id}` }}
+                  to={{ pathname: `/rdv/${rdv._id}` }}
                   className="btn btn-bwm-main"
                 >
-                  Go to Rental
+                  Go to RDV
                 </Link>
                 {renderMenu && renderMenu(rdv._id)}
-              </div>
-              <div className="card-footer text-muted">
-                Created at {formatDate(rdv.createdAt)}
               </div>
             </div>
           </div>

@@ -1,3 +1,11 @@
+## Config
+
+Add database through /server/config/dev.js before starting
+
+## My Git :
+
+https://github.com/samedan/2205-rdv-pharmacie
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

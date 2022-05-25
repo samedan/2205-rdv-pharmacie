@@ -15,7 +15,7 @@ exports.getRdv = async (req, res) => {
 // GET /api/v1/rdv/me
 exports.getUserRdv = async (req, res) => {
   const { user } = res.locals;
-  console.log({ user });
+
   try {
     const rdvs = await Rdv.find({ owner: user });
     console.log({ rdvs });

@@ -107,6 +107,7 @@ exports.onlyAuthUser = (req, res, next) => {
     }
 
     User.findById(decodedToken.sub, (error, foundUser) => {
+      console.log(foundUser);
       if (error) {
         return res.mongoError(error);
       }
